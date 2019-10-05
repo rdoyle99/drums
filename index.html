@@ -61,6 +61,12 @@
 
 <script>
 
+import honkify from 'honkify';
+// The goose is loose!
+const unregister = honkify();
+// Disable so links work again
+unregister();
+
   function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
